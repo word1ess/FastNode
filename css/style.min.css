@@ -220,7 +220,8 @@ h6 {
   --secondary: #ff6c2f;
   --black: #000;
   --black-lighter: #131212;
-  --btn-hover: #131212;
+  --btn-hover: #ffffff;
+  --btn-hover-text: #ff6c2f;
   --btn-active: rgb(213, 89, 7);
   --card-bg-gradient: radial-gradient(69.98% 69.82% at 50.11% 87.99%, #013ee7 0%, #0639b8 18.42%, #09182d 81.55%);
 }
@@ -383,6 +384,7 @@ a:hover {
 }
 .btn:hover {
   background: var(--btn-hover);
+  color: var(--btn-hover-text);
 }
 .btn:active {
   background: var(--btn-active);
@@ -1428,6 +1430,9 @@ body {
     flex-direction: column;
     gap: 20px;
   }
+  .pricing__item {
+    aspect-ratio: auto;
+  }
   .advantages__row {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 1fr;
@@ -1571,8 +1576,8 @@ body {
   .company {
     margin: 0 auto;
   }
-  .company picture {
-    inset: 0px;
+  .company__bg {
+    mask-size: cover;
   }
   .company__row {
     padding: 60px 25px;
